@@ -103,9 +103,5 @@ document.getElementById("hint-button").addEventListener("click", function () {
         document.getElementById("hint-button").innerText = questions[current_question].hint;
 });
 
-document.getElementById("start-button").onclick = function () {
-        location.href = "https://devdiegocardoso.github.io/beccas_niver/index.html";
-    };
-
 if (!is_endgame)
     hangman();
