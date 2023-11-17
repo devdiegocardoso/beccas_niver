@@ -82,7 +82,7 @@ function endGame() {
         document.getElementById("div-text-area").innerHTML = '<h1>Try Again, menina!</h1><br><button class="play-button" id="restart-button">Restart</button>';
         document.querySelector("img").src = "images/" + gameover_image;
         document.getElementById("restart-button").addEventListener("click", function () {
-            location.reload();
+            location.href = "https://devdiegocardoso.github.io/beccas_niver/index.html";
         });
     }
     else {
