@@ -90,7 +90,7 @@ function endGame() {
         document.getElementById("div-text-area").innerHTML = '<h1>Congrats! You saved the nice guy and now he is so grateful that he is going to give you some gifts in return!</h1><br><button class="play-button" id="restart-button">Restart</button>';
         document.querySelector("img").src = "images/" + winner_image;
         document.getElementById("restart-button").addEventListener("click", function () {
-            location.reload();
+            location.href = "https://devdiegocardoso.github.io/beccas_niver/index.html";
         });
     }
 }
@@ -102,6 +102,10 @@ document.getElementById("answer-button").addEventListener("click", function () {
 document.getElementById("hint-button").addEventListener("click", function () {
         document.getElementById("hint-button").innerText = questions[current_question].hint;
 });
+
+document.getElementById("start-button").onclick = function () {
+        location.href = "https://devdiegocardoso.github.io/beccas_niver/index.html";
+    };
 
 if (!is_endgame)
     hangman();
